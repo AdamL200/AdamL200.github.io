@@ -1,0 +1,275 @@
+body {
+
+    background:black;
+    
+}
+
+#button1 {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+.comic {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#btn1 {
+    padding-top: 10px;
+    margin: 0;
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.rainbow {
+
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 10s ease infinite;
+    -z-animation: rainbow 12s ease infinite;
+    -o-animation: rainbow 12s ease infinite;
+    animation: rainbow 12s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana;
+    font-size: 30px;
+    background-color: blueviolet;
+}
+
+#test1 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.test3 {
+    text-align: right;
+}
+
+p.center {
+    text-align: center;
+    color: coral;
+}
+
+p.whitebackground {
+    background-color: antiquewhite;
+}
+
+.leftCol {
+    width: 15%;
+    height: 100%;
+}
+
+.rightCol {
+    width: 15%;
+    height: 100%;
+}
+
+.middleCol {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    background: rgba(90, 90, 92, 0.4);
+
+}
+
+.cols {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+nav {
+    height: 50px;
+    background-color: rgb(24, 27, 39);
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+    /* Links inside the navbar */
+nav > a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change background on mouse-over */
+nav > a:hover {
+    background: #ddd;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid;
+    width: 100%
+  }
+
+#list1 {
+    width: 80%
+}
+
+td, li, .text1 {
+    text-align: center;
+    padding: 15px;
+}
+
+.adImage {
+    height: 300px;
+    width: 221px;
+}
+
+.hrCol {
+    width: 100%;
+}
+
+.neonText1 {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 24px #0fa,
+        0 0 30px #0fa,
+        0 0 42px #0fa,
+        0 0 60px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}
+
+#title {
+    background: black;
+    width: 100%;
+}
+
+.neonText {
+    animation: flicker 1.5s infinite alternate;     
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 24px #0fa,
+      0 0 30px #0fa,
+      0 0 42px #0fa,
+      0 0 60px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+}
+
+footer {
+    height: 50px;
+    margin-top: -50px;
+    background: black;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    text-align: center;
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+#output {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#snkDiv {
+    text-align: center;
+}
+
+#gamespace {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+canvas{
+    box-shadow: black 20px 10px 50px; /*elevate our canvas and add shadow*/
+    border: 1px solid #aaa;
+    border-radius: 15px;
+   }
